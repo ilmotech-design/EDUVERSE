@@ -3,37 +3,43 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ILMOTECH EDUVERSE AI</title>
+<title>EDUVERSE AI CHAMPION</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- LOGIN SCREEN -->
-<div id="loginBox" class="login-box">
-  <h2>🔐 Login EDUVERSE</h2>
-  <input id="user" placeholder="Nama pengguna">
+<!-- LOGIN -->
+<div id="login" class="login">
+  <h1>🔐 EDUVERSE LOGIN</h1>
+  <input id="name" placeholder="Nama anda">
   <button onclick="login()">Masuk</button>
 </div>
 
-<!-- MAIN APP -->
+<!-- APP -->
 <div id="app" style="display:none;">
 
+<nav>
+  <div><b>EDUVERSE AI</b></div>
+  <div>🏆 Score: <span id="score">0</span></div>
+</nav>
+
 <header>
-  <h1>ILMOTECH EDUVERSE AI</h1>
-  <p>Selamat datang, <span id="name"></span></p>
-  <p>🏆 Skor: <span id="score">0</span></p>
+  <h1>EDUVERSE PAK-21 AI SYSTEM</h1>
+  <p>Canva-Level • Interactive • AI Learning Platform</p>
+
+  <input id="search" onkeyup="search()" placeholder="🔍 Cari aktiviti...">
 </header>
 
-<div class="container" id="list"></div>
+<section>
+  <h2>📊 Leaderboard</h2>
+  <div id="board" class="board"></div>
+</section>
 
-<!-- MODAL -->
-<div class="modal" id="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">✖</span>
-    <div id="detail"></div>
-  </div>
-</div>
+<section>
+  <h2>📚 47 Aktiviti PAK-21</h2>
+  <div id="list" class="grid"></div>
+</section>
 
 </div>
 
